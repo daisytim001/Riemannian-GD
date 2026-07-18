@@ -1,3 +1,11 @@
-# DAAD Research Stay Oct-Dec 2026 - MPI Tübingen
+# Riemannian Gradient Descent on the Sphere
 
-This repo will hold my re-implementation of Riemannian Gradient Descent.
+Implementation of Riemannian Gradient Descent for optimization on the unit sphere S^{n-1}.
+
+## What this does
+This project implements RGD to minimize a function subject to ||x|| = 1 constraint. 
+Key steps: project gradient to tangent space, take step, then retract back to sphere.
+
+## How to run
+```bash
+python riemannian_gd.py
